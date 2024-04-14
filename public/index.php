@@ -42,8 +42,8 @@
 <body>
     <div class="Box">
         <h2> WELCOME TO CONFERENCE ROOM BOOKING </h2>
-        <button onclick="window.open('userlogin.html')">Login as User</button>
-        <button onclick="window.open('adminlogin.html')">Login as Admin</button>
+        <button onclick="window.open('userlogin.php')">Login as User</button>
+        <button onclick="window.open('adminlogin.php')">Login as Admin</button>
     </div>
 </body>
 </html>
