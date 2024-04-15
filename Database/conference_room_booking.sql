@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 14, 2024 at 11:53 AM
+-- Generation Time: Apr 15, 2024 at 04:14 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -28,9 +28,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `user` (
+  `uname` varchar(100) NOT NULL,
   `uid` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`uname`, `uid`, `password`) VALUES
+('Omkar Kishor Patil', 'Patilomkar2820@gmail.com', 'a512f1621f0c592925bc7afb2801d9be');
 
 --
 -- Indexes for dumped tables

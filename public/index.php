@@ -28,8 +28,8 @@
             font-size: 16px;
             border-radius: 50px; /* Make the button round */
             border: none;
-            background-color: #020b14; /* Blue color */
-            color: white;
+            background-color: yellow; /* Blue color */
+            color: black;
             cursor: pointer;
             transition: background-color 0.3s;
             margin: 10px;
@@ -42,8 +42,8 @@
 <body>
     <div class="Box">
         <h2> WELCOME TO CONFERENCE ROOM BOOKING </h2>
-        <button onclick="window.open('userlogin.php')">Login as User</button>
-        <button onclick="window.open('adminlogin.php')">Login as Admin</button>
+        <button onclick="window.location.href='user_login.php'">Login as User</button>
+        <button onclick="window.location.href='user_login.php'">Login as Admin</button>
     </div>
 </body>
 </html>
