@@ -1,15 +1,14 @@
 <?php
-$server = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'conference_room_booking';
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "conference_room_booking_system";
 
-if (isset($_POST))
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    $conn = new mysqli($server, $username, $password, $database);
-if ($conn) {
-    // echo 'Server Connected Success';
-} else {
-    die(mysqli_error($conn));
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
